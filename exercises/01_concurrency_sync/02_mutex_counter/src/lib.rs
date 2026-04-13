@@ -73,11 +73,6 @@ pub fn concurrent_collect(n_threads: usize) -> Vec<usize> {
     let mut result = data.lock().unwrap().clone();
     result.sort();
     result
-    }
-    
-    let mut res=data.lock().unwrap();
-    res.sort();
-    res.clone()
 }
 
 #[cfg(test)]
